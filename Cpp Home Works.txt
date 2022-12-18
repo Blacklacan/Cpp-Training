@@ -1,0 +1,196 @@
+	//Problem 14
+	/*cout << "Welcome to Swap Numbers!" << endl;
+	int N1;
+	int N2;
+	int Temp;
+	cout << "enter the first Number" << endl;
+	cin >> N1;
+	cout << "enter the second" << endl;
+	cin >> N2;
+	Temp = N2;
+	N2 = N1;
+	N1 = Temp;
+	cout << "the Swapped N1: " << N1 << endl;
+	cout << "the swapped N2: " << N2 << endl;*/
+
+	//Problem 15
+	/*cout << "Welcom to the rectangular area calculator\n";
+	float Height;
+	float Weidth;
+	cout << "enter the Height: \n";
+	cin >> Height;
+	cout << "enter the Weidth: \n";
+	cin >> Weidth;
+	float Area = Height * Weidth;
+	cout << "Your Rectangular Area is: " << Area;*/
+	
+	//Problem 16:
+	/*int A, B;
+	cout << "Enter A \n";
+	cin >> A;
+	cout << "Enter B \n";
+	cin >> B;
+
+	double Area = A * sqrt(pow(B, 2) - pow(A, 2));*/
+
+
+	//Problem 17
+	/* cout << "Welcom to the Triangle area calculator\n";
+	float Height;
+	float Weidth;
+	cout << "enter the Height: \n";
+	cin >> Height;
+	cout << "enter the Weidth: \n";
+	cin >> Weidth;
+	float Area = (Height * Weidth) / 2;
+	cout << "Your triangle Area is: " << Area;*/
+	
+	//Problem 18
+	/*cout << "welcome to Circle area calculator\n";
+	const int Pi = 3.14;
+	int r;
+	cout << "enter r: \n";
+	cin >> r;
+	double area = Pi * pow(r, 2);
+	cout << area;
+	cout << "\a";*/
+	
+	//Problems 19,20,21
+	/*cout << "welcome to Circle area calculator\n";
+	int diametar;
+	const int Pi = 3.14;
+	cout << "Enter the diameter\n";
+	cin >> diametar;
+	float Area = Pi * (pow(diametar, 2) / 4);
+	cout << "The circle area is (Pi * D^2)/4\n";
+	cout << "so after calculation your circle area is: " << ceil(Area) << endl;*/
+
+	//Problem 22:
+	/*cout << "welcome to Circle area in an Isosceles Triangle\n";
+	float A;
+	float B;
+	const int Pi = 3.14;
+	cout << "Enter A\n";
+	cin >> A;
+	cout << "Enter B\n";
+	cin >> B;
+	float Area = (Pi * (B * B) / 4) * ((2 * A - B) / (2 * A + B));
+	cout << "the area is: " << Area;*/
+
+	//Problem 31
+	/*cout << "Welcome to the second, third and fourth power program" << endl;
+	short Number;
+	cout << "Enter the Number" << endl;
+	cin >> Number;
+	cout << "The second power is: "<< Number * Number << endl;
+	cout << "The third power is: " << Number * Number * Number << endl;
+	cout << "The forth power is: " << Number * Number * Number * Number << endl;*/
+
+	//Problem 35
+	/*int pennies;
+	float Nickles;
+	float Dimes;
+	float Quarters;
+	float Dollars;
+
+	cout << "Welcome to pennie Bank" << endl;
+	cout << "How Many pennies? \n";
+	cin >> pennies;
+	cout << "How Many Nickles? \n";
+	cin >> Nickles;
+	cout << "How Many Dimes? \n";
+	cin >> Dimes;
+	cout << "How Many Quarters? \n";
+	cin >> Quarters;
+	cout << "How Many Dollars? \n";
+	cin >> Dollars;
+
+	float Total_Pennies = pennies + 5 * Nickles + 10 * Dimes + 25 * Quarters + 100 * Dollars;
+	float Total_Dollars = Total_Pennies / 100;
+
+	cout << "Your Total Pennies: " << Total_Pennies << endl;
+	cout << "Your Total Dollars: " << Total_Dollars << endl;*/
+
+	//Problem 39+40:
+	/*cout << "Welcome to Bill Calculator\n";
+	double Bill_Value;
+	double Cash_Paid;
+	double Cash_returned;
+	cout << "Bill Initial Value? \n";
+	cin >> Bill_Value;
+	double Bill_Service = Bill_Value * 1.1;
+	double Total_Bill = Bill_Service * 1.16;
+	cout << "Total bill: " << Total_Bill<< endl;
+	cout << "Cash Paid? \n";
+	cin >> Cash_Paid;
+	Cash_returned = Cash_Paid - Total_Bill;
+	cout << "The reminder is: " << Cash_returned << endl;*/
+
+	//Problem 42
+	/* std::cout << "TASK IN SECONDS!\n";
+	float Seconds;
+	float Minutes;
+	float Hours;
+	float Days;
+	std::cout << "Enter the Seconds: \n";
+	std::cin >> Seconds;
+	std::cout << "Enter the Minutes: \n";
+	std::cin >> Minutes;
+	std::cout << "Enter the Hours: \n";
+	std::cin >> Hours;
+	std::cout << "Enter the Days: \n";
+	std::cin >> Days;
+	double Total_Seconds = Seconds + 60 * Minutes + 60 * 60 * Hours + 60 * 60 * 24 * Days;
+	std::cout << "Total Seconds: " << Total_Seconds;*/
+
+	//Problem 43
+	/*const int Seconds_Day = 24 * 60 * 60;
+	const int Seconds_Hour = 60 * 60;
+	const int Seconds_Minute = 60;
+	int Total_Seconds,days,Hour,Minutes,Seconds;
+	int reminder = 0;
+	cout << "How Many Days Calc!\n";
+	cout << "How Much Total Seconds?\n";
+	cin >> Total_Seconds;
+	days = floor(Total_Seconds / Seconds_Day);
+	reminder = Total_Seconds % Seconds_Day;
+	Hour = floor(reminder / Seconds_Hour);
+	reminder = reminder % Seconds_Hour;
+	Minutes = floor(reminder / Seconds_Minute);
+	reminder = reminder % Seconds_Minute;
+	Seconds = reminder;
+
+	cout << days << ":" << Hour << ":" << Seconds << endl;
+
+	cout << endl << endl;
+
+	return 0;*/
+
+	//Problem 47
+	/*cout << "Welcome To Loan Months calc" << endl;
+
+	int Total_loan, Monthly_payment, Total_months;
+	cout << "Enter Total loan amount: \n";
+	cin >> Total_loan;
+	cout << "Enter Your Monthly Payment: \n";
+	cin >> Monthly_payment;
+
+	Total_months = Total_loan / Monthly_payment;
+
+	cout << "Your Total Months to pay the loan is: " << Total_months << " Months" << endl;
+
+	cout << "\a\n";
+	cout << endl << endl;*/
+
+	//Problem 48
+	/*cout << "Welcome To Loan installment calc" << endl;
+	int Total_loan, Monthly_payment, Total_months;
+	cout << "Enter Total loan amount: \n";
+	cin >> Total_loan;
+	cout << "Enter Desired Total Months: \n";
+	cin >> Total_months;
+	Monthly_payment = Total_loan / Total_months;
+	cout << "Your Total Months to pay the loan is: " << Monthly_payment << " Dollars" << endl;
+	cout << "\a\n";
+	cout << endl << endl;
+	cout << "\a";*/
