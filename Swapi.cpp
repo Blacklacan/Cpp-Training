@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void Swapii(int Num1, int Num2)
+void Swapii(int &Num1, int &Num2)
 {
 	int temp;
 	temp = Num1;
@@ -17,5 +17,6 @@ int main()
 	cin >> x;
 	cin >> y;
 	Swapii(x,y);
+	cout << x << " " << y;
 	return 0;
 }
