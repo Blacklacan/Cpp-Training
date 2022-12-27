@@ -13,7 +13,7 @@ int ReadIntFromRange(int Lower, int Upper) {
 
 	} while (Number < Lower || Number > Upper);
 
-	
+
 	return Number;
 }
 
