@@ -9,13 +9,17 @@ int ReadN() {
     return N;
 }
 
-
-
 void Factorial_of_N(int N) {
+    int counter = 1;
     int mlty = 1;
-    for (int counter = 1; counter <= N; counter++)
+    if (N == 0)
     {
-        mlty *= counter;
+        cout << mlty;
+    }
+    while (counter <= N)
+    {
+     mlty *= counter;
+     counter += 1;
     }
     cout << mlty;
 }

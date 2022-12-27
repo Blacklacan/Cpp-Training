@@ -1,6 +1,6 @@
 #include <iostream>
-#include <cmath> 
 using namespace std;
+
 
 double power(double Num, double M)
 {
@@ -10,17 +10,12 @@ double power(double Num, double M)
 	{
 		return P;
 	}
-	else
+	while (counter != M)
 	{
-		while (counter != M)
-		{
-			P = P * Num;
-			counter++;
-		}
-		return P;
+		P = P * Num;
+		counter++;
 	}
-	
-
+	return P;
 
 }
 
@@ -30,6 +25,6 @@ int main()
 	cout << "enter x and y \n";
 	cin >> x;
 	cin >> y;
-	cout << power(x,y);
+	cout << power(x, y);
 	return 0;
 }

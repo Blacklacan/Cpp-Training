@@ -1,37 +1,46 @@
 #include <iostream>
-
 using namespace std;
 
 
-int main()
+void Validate_Password()
 {
-	int PassWord;
+
 	int Balance = 4900;
 	cout << "Enter your Password: \n";
-	cin >> PassWord;
+	int Input_Password;
+	cin >> Input_Password;
 	int counter = 0;
+
+	int True_Password = 9876;
+
+
 	while (counter < 3)
 	{
-		if (PassWord == 1234)
+		if (Input_Password == True_Password)
 		{
-			cout << "Your Balance is: " << Balance << endl;
+			cout << "Your balance is " << Balance << '$';
 			break;
 		}
 		else
 		{
 			counter += 1;
-			if (counter == 3)
+			if (counter >= 3)
 			{
 				cout << "You are locked out. bye" << endl;
 				break;
 			}
 			else
 			{
-				cout << "Wrong Password" << endl;
-				cout << "Enter your Password again: " << endl;
-				cin >> PassWord;
+				cout << "Wrong Password, enter your Password again: " << endl;
+				cin >> Input_Password;
 			}
-		}
 
+		}
 	}
+}
+
+
+int main(){
+	Validate_Password();
+	return 0;
 }
