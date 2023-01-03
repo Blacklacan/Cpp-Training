@@ -18,8 +18,8 @@ void PrintDigits(int Number)
 	{
 		Remainder = Number % 10;
 		Number = Number / 10;
-		Number2 = Number2 * 10 + Number
-		cout << Number2 << endl;
+		Number2 = Number2 * 10 + Remainder
+		cout << Remainder << endl;
 	}
 	// best suited when there is zeros on the left compared to my solution
 }
