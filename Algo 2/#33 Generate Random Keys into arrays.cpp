@@ -12,7 +12,7 @@ int ReadPositiveNumber(string message) {
 
 	return Number;
 }
-enum enDataType{Capital =1, Small =2, Special= 3, Number= 4};
+enum enDataType { Capital = 1, Small = 2, Special = 3, Number = 4 };
 int RandomNumber(int From, int To) {
 	int randNumb = rand() % (To - From + 1) + From;
 	return randNumb;
@@ -46,8 +46,8 @@ string GenerateKey() {
 	string Key;
 	for (int i = 0; i <= 4; i++)
 	{
-		if (i !=4)
-			Key = Key + GenerateWord(enDataType::Capital, 4)+"-";
+		if (i != 4)
+			Key = Key + GenerateWord(enDataType::Capital, 4) + "-";
 		else
 			Key = Key + GenerateWord(enDataType::Capital, 4);
 
@@ -58,20 +58,21 @@ string GenerateKey() {
 
 
 
-void PrintKey(int arr[100], int _Keys) {
+void PrintKey(string arr[100], int _Keys) {
 	for (int i = 1; i <= _Keys; i++)
 	{
-		arr[i - 1] = GenerateKey();
-		cout << "array[" << i -1 << "] = " << arr[i - 1] << endl;
+		//you could put array key generation and printing into separate functions.
+		arr[i-1] = GenerateKey();
+		cout << "Array[" << i-1 << "] = " << arr[i - 1] << endl;
 	}
 }
 
 
 int main() {
 	srand((unsigned)time(NULL));
-	int arr1[100];
+	string arr1[100];
+	int arrLength = ReadPositiveNumber("How Many Keys do you wish to generate?")
 
-	PrintKey(arr1[100],ReadPositiveNumber("How Many Keys do you wish to generate?"));
-
+	PrintKey(arr1, arrLength);
 }
 
