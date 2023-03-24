@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-#36 count Each word in a string",
+      "appliesTo": "Algo 3/#36 count Each word in a string.cpp",
+      "type": "launch"
+    }
+  ]
+}
