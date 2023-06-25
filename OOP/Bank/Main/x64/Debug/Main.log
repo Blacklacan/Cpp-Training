@@ -1,0 +1,4 @@
+﻿  Main.cpp
+C:\Users\Abwaab 32\source\repos\Bank\Main\headers\ClsString.hpp(110,24): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\Abwaab 32\source\repos\Bank\Main\headers\clsBankClient.hpp(24,144): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Main.vcxproj -> C:\Users\Abwaab 32\source\repos\Bank\x64\Debug\Main.exe
